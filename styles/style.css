@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: rgb(38, 174, 129);
+}
+
+.grid-container {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.cell {
+  background-color: grey;
+  line-height: 4rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  border-radius: 8%;
+}
+
+.el-2 {
+  grid-column: 3 / span 3;
+  grid-row: 2;
+  border: solid 2px red;
+}
+
+div:nth-child(even) {
+  background-color: lightgrey;
+}
